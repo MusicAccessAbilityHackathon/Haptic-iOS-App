@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7239F6B72054915500CA1BEF /* HapticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239F6B62054915500CA1BEF /* HapticsEngine.swift */; };
 		855A9BB120548E40001E57FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A9BB020548E40001E57FA /* AppDelegate.swift */; };
 		855A9BB320548E40001E57FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A9BB220548E40001E57FA /* ViewController.swift */; };
 		855A9BB620548E40001E57FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855A9BB420548E40001E57FA /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7239F6B62054915500CA1BEF /* HapticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsEngine.swift; sourceTree = "<group>"; };
 		855A9BAD20548E40001E57FA /* Haptic iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Haptic iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855A9BB020548E40001E57FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855A9BB220548E40001E57FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				855A9BB020548E40001E57FA /* AppDelegate.swift */,
 				855A9BB220548E40001E57FA /* ViewController.swift */,
+				7239F6B62054915500CA1BEF /* HapticsEngine.swift */,
 				855A9BB420548E40001E57FA /* Main.storyboard */,
 				855A9BB720548E40001E57FA /* Assets.xcassets */,
 				855A9BB920548E40001E57FA /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				855A9BB320548E40001E57FA /* ViewController.swift in Sources */,
 				855A9BB120548E40001E57FA /* AppDelegate.swift in Sources */,
+				7239F6B72054915500CA1BEF /* HapticsEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
