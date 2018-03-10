@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         return vc
     }
     
+    // MARK: Overrides
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle { return UIStatusBarStyle.lightContent }
+    
     // MARK: Actions
     
     @IBAction func playButtonActivated(_ sender: Any) {
