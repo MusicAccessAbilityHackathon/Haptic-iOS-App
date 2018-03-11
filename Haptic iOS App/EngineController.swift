@@ -11,12 +11,24 @@ import UIKit
 struct EngineController {
     let engine = HapticsEngine()
     let sound = SoundController()
+    
+    var isEnabled = true
 }
 
 extension EngineController: VCDelegate {
-    func playButtonActivated(_ button: UIButton, vc: ViewController) {
-        sound.play(.music)
-        engine.feedbackHandler()
-        button.isEnabled = false
+    mutating func playButtonActivated(_ button: UIButton, vc: ViewController) {
+        switch isEnabled {
+        case true:
+            isEnabled = false
+            button.setTitle("Stop", for: .normal)
+            sound.play(.music)
+            engine.startFeedback()
+        case false:
+            isEnabled = true
+            button.setTitle("Play", for: .normal)
+            sound.stop()
+            engine.cancelFeedback()
+        }
+        
     }
 }

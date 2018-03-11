@@ -13,25 +13,27 @@ class HapticsEngine {
     let beatDuration = 1000
     let songDuration = ((4 * 60) + 5) * 1000 //4'05 long song
 
-    var lightFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+    let lightFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+    
+    var timer: Timer?
     
     //Will need to take in relevant audio metadata (e.g. loudness peaks)
-    func feedbackHandler() {
+    func startFeedback() {
         lightFeedbackGenerator.prepare()
         
         let timeOfSongEnd = Date(timeIntervalSinceNow: TimeInterval(songDuration / 1000))
-        Timer.scheduledTimer(withTimeInterval: TimeInterval(beatDuration / 1000), repeats: true) { timer in
-            if Date() > timeOfSongEnd {
-                timer.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(beatDuration / 1000), repeats: true) { timer in
+            guard Date() < timeOfSongEnd else {
+                self.cancelFeedback()
+                return
             }
             self.lightFeedbackGenerator.impactOccurred()
-            print("beat")
         }
-        lightFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
     }
     
     func cancelFeedback() {
-        lightFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+        timer?.invalidate()
+        timer = nil
     }
     
     

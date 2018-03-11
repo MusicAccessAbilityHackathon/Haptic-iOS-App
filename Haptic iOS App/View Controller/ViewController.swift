@@ -9,7 +9,7 @@
 import UIKit
 
 protocol VCDelegate {
-    func playButtonActivated(_ button: UIButton, vc: ViewController)
+    mutating func playButtonActivated(_ button: UIButton, vc: ViewController)
 }
 
 class ViewController: UIViewController {

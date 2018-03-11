@@ -71,5 +71,9 @@ struct SoundController {
         audioPlayer?.play()
         audioPlayer?.prepareToPlay()
     }
+    
+    func stop() {
+        audioPlayers.forEach { $0.value?.stop() }
+    }
 }
 
