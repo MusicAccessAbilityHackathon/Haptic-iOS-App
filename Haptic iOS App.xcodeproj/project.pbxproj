@@ -14,7 +14,10 @@
 		855A9BBB20548E40001E57FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855A9BB920548E40001E57FA /* LaunchScreen.storyboard */; };
 		855A9BC3205499E8001E57FA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A9BC2205499E8001E57FA /* GradientView.swift */; };
 		855A9BC52054A343001E57FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855A9BC42054A343001E57FA /* Main.storyboard */; };
-		855A9BC72054A3A9001E57FA /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A9BC62054A3A9001E57FA /* Stub.swift */; };
+		855A9BC72054A3A9001E57FA /* EngineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A9BC62054A3A9001E57FA /* EngineController.swift */; };
+		855A9BCB2054B01C001E57FA /* HapticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A9BCA2054B01C001E57FA /* HapticsEngine.swift */; };
+		855A9BCD2054B638001E57FA /* Music.wav in Resources */ = {isa = PBXBuildFile; fileRef = 855A9BCC2054B638001E57FA /* Music.wav */; };
+		855A9BCF2054B678001E57FA /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A9BCE2054B678001E57FA /* SoundController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +30,10 @@
 		855A9BBC20548E40001E57FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		855A9BC2205499E8001E57FA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		855A9BC42054A343001E57FA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		855A9BC62054A3A9001E57FA /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		855A9BC62054A3A9001E57FA /* EngineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineController.swift; sourceTree = "<group>"; };
+		855A9BCA2054B01C001E57FA /* HapticsEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticsEngine.swift; sourceTree = "<group>"; };
+		855A9BCC2054B638001E57FA /* Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Music.wav; sourceTree = "<group>"; };
+		855A9BCE2054B678001E57FA /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,11 @@
 		855A9BAF20548E40001E57FA /* Haptic iOS App */ = {
 			isa = PBXGroup;
 			children = (
+				855A9BCC2054B638001E57FA /* Music.wav */,
 				855A9BB020548E40001E57FA /* AppDelegate.swift */,
-				855A9BC62054A3A9001E57FA /* Stub.swift */,
+				855A9BCA2054B01C001E57FA /* HapticsEngine.swift */,
+				855A9BCE2054B678001E57FA /* SoundController.swift */,
+				855A9BC62054A3A9001E57FA /* EngineController.swift */,
 				855A9BC82054A43A001E57FA /* View Controller */,
 				855A9BC42054A343001E57FA /* Main.storyboard */,
 				855A9BC2205499E8001E57FA /* GradientView.swift */,
@@ -140,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855A9BCD2054B638001E57FA /* Music.wav in Resources */,
 				855A9BBB20548E40001E57FA /* LaunchScreen.storyboard in Resources */,
 				855A9BB820548E40001E57FA /* Assets.xcassets in Resources */,
 				855A9BC52054A343001E57FA /* Main.storyboard in Resources */,
@@ -155,9 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				855A9BB320548E40001E57FA /* ViewController.swift in Sources */,
+				855A9BCF2054B678001E57FA /* SoundController.swift in Sources */,
 				855A9BB120548E40001E57FA /* AppDelegate.swift in Sources */,
 				855A9BC3205499E8001E57FA /* GradientView.swift in Sources */,
-				855A9BC72054A3A9001E57FA /* Stub.swift in Sources */,
+				855A9BCB2054B01C001E57FA /* HapticsEngine.swift in Sources */,
+				855A9BC72054A3A9001E57FA /* EngineController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
