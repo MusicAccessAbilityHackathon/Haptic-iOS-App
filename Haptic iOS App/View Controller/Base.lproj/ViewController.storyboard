@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,15 +16,15 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Haptic_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK5-aR-YyU" customClass="GradientView" customModule="Haptic_iOS_App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl8-uI-g5f">
-                                <rect key="frame" x="131.66666666666666" y="630" width="112" height="48"/>
+                                <rect key="frame" x="131.5" y="519" width="112" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="32" minY="8" maxX="32" maxY="8"/>
@@ -32,11 +33,12 @@
                                     <action selector="playButtonActivated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jjw-oX-1I8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s Feel Some Music" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7t-So-Z4J">
-                                <rect key="frame" x="135" y="144" width="153" height="229.33333333333337"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="CGL-s6-kbo"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7t-So-Z4J">
+                                <rect key="frame" x="127.5" y="103.5" width="120" height="230"/>
+                                <string key="text">Let’s
+Feel
+Some
+Music</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -46,13 +48,12 @@
                         <constraints>
                             <constraint firstItem="IK5-aR-YyU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Ex-zP-yEO"/>
                             <constraint firstItem="IK5-aR-YyU" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="4gQ-OG-5q2"/>
-                            <constraint firstItem="cl8-uI-g5f" firstAttribute="top" relation="greaterThanOrEqual" secondItem="e7t-So-Z4J" secondAttribute="bottom" constant="100" id="8cq-GL-boU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cl8-uI-g5f" secondAttribute="bottom" constant="100" id="aLr-IU-NRS"/>
-                            <constraint firstItem="e7t-So-Z4J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="24" id="bCG-FT-CYZ"/>
+                            <constraint firstAttribute="centerY" secondItem="e7t-So-Z4J" secondAttribute="bottom" id="Eub-Ap-hox"/>
+                            <constraint firstItem="cl8-uI-g5f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-100" id="aLr-IU-NRS"/>
+                            <constraint firstItem="e7t-So-Z4J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bCG-FT-CYZ"/>
                             <constraint firstItem="cl8-uI-g5f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXH-4W-z12"/>
                             <constraint firstItem="IK5-aR-YyU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iY9-dr-ePT"/>
                             <constraint firstItem="IK5-aR-YyU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="jp9-bE-zos"/>
-                            <constraint firstItem="e7t-So-Z4J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="999" constant="100" id="wsq-MW-iSM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
